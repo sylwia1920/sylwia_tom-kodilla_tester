@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Stamp {
     private String name;
     private double dimension;
-    private String stamped;
+    private boolean stamped;
 
-    public Stamp(String name, double dimension, String stamped) {
+    public Stamp(String name, double dimension, boolean stamped) {
         this.name = name;
         this.dimension = dimension;
         this.stamped = stamped;
@@ -23,7 +23,7 @@ public class Stamp {
         return dimension;
     }
 
-    public String getStamped() {
+    public boolean getStamped() {
         return stamped;
     }
 
@@ -32,7 +32,7 @@ public class Stamp {
         if (this == o) return true;
         if (!(o instanceof Stamp)) return false;
         Stamp stamp = (Stamp) o;
-        return getName() == stamp.getName() &&
+        return getName().equals(stamp.getName()) &&
                 getDimension() == stamp.getDimension() &&
                 Objects.equals(getStamped(), stamp.getStamped());
     }
