@@ -1,4 +1,4 @@
-package com.kodilla.parametrized_tests.homework;
+/*package com.kodilla.parametrized_tests.homework;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -85,3 +85,5 @@ public class PersonTestSuite {
         assertEquals("Obese Class VI (Hyper Obese)", result);
     }
 }
+
+ */

@@ -1,4 +1,4 @@
-package com.kodilla.execution_model.homework;
+/*package com.kodilla.execution_model.homework;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -128,3 +128,5 @@ public class ShopTestSuite {
         assertEquals(expectedSum, shop.sumPricesOfAllOrders(),0.01);
     }
 }
+
+ */

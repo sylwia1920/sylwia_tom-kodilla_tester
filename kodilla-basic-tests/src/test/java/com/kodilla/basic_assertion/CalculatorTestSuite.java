@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
             Calculator calculator = new Calculator();
             int a = 5;
             int b = 8;
-            int sumResult = calculator.sum(a, b);
+            int sumResult = calculator.dodawanie(a, b);
             assertEquals(13, sumResult);
         }
     }

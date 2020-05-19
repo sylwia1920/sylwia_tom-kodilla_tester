@@ -14,7 +14,6 @@ public class WindowsMe extends OperatingSystem {
 
     public WindowsMe(int year) {
         super(year);
-
     }
 }
 

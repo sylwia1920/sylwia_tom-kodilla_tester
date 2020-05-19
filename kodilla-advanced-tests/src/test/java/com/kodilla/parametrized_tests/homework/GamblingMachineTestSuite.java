@@ -1,4 +1,4 @@
-package com.kodilla.parametrized_tests.homework;
+/*package com.kodilla.parametrized_tests.homework;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -128,3 +128,5 @@ public class GamblingMachineTestSuite {
         return sets;
     }
 }
+
+ */

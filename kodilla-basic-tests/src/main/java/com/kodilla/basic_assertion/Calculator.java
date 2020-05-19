@@ -1,6 +1,7 @@
-package com.kodilla.inheritance.basic_assertion;
+package com.kodilla.basic_assertion;
 
 public class Calculator {
+
     private static boolean correct;
 
     public static void main(String[] args) {
@@ -9,8 +10,9 @@ public class Calculator {
 
     }
 
+
     public static int dodawanie(int a, int b) {
-        correct = ResultChecker.assertEquals(6, dodawanie(a, b));
+       // correct = ResultChecker.assertEquals(6, dodawanie(a, b));
         if (correct) {
             System.out.println("Metoda dodawanie działa poprawnie dla liczb " + a + " i " + b);
         } else {
@@ -45,4 +47,12 @@ public class Calculator {
         dodawanie(a, b);
         kwadrat(a, b);
     }
+
+    public static class ResultChecker {
+        public static boolean assertEquals(int expected, int actual) {
+            return expected == actual;
+        }
+    }
 }
+
+

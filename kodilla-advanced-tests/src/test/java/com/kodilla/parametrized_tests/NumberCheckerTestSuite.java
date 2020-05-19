@@ -3,7 +3,7 @@ package com.kodilla.parametrized_tests;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class NumberCheckerTestSuite {
@@ -24,6 +24,12 @@ public class NumberCheckerTestSuite {
         assertFalse(result);
     }
 }
+
+
+
+
+
+
 
 
 
@@ -66,6 +72,10 @@ public class NumberCheckerTestSuite {
     }
 
          */
+
+
+
+
 
 
 

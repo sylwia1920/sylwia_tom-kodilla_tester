@@ -8,8 +8,8 @@ public class Person {
         Cook chris = new Cook(0, "Chris", 35, "Cook");
         Gardener jan = new Gardener(0, "Jan", 55, "Gardener");
         bill.displayIntro();
-        michael.showResponsibilites();
+        bill.showResponsibilites();
         chris.displayIntro();
-        jan.showResponsibilites();
+        chris.showResponsibilites();
     }
 }

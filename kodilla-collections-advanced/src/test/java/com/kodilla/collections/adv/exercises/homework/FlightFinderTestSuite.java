@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.exercises.homework;
+/*package com.kodilla.collections.adv.exercises.homework;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,3 +15,5 @@ class FlightFinderTestSuite {
             assertEquals(4, flightFinder.findFlightsFrom("Kraków").size());
         }
     }
+
+ */
