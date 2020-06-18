@@ -8,9 +8,11 @@ public class TaskManager {
     public static void main(String[] args) {
         List<LocalDate> deadlines = TaskRepository.getTasks()
                 .stream()
-                .map(u -> u.getDeadline())
+                .map(Task::getDeadline)
                 .filter(u -> u.isAfter(LocalDate.now()))
                 .collect(Collectors.toList());
         System.out.println(deadlines);
     }
 }
+
+
