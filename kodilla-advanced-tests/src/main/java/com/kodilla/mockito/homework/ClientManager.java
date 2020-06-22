@@ -20,11 +20,9 @@ public class ClientManager {
     }
 
     public void removeClientFromLocation(Client client, Location location) throws NoLocation {
-        if (generalSubscription.containsKey(location) && generalSubscription.get(location).contains(client)) {
-            generalSubscription.get(location).remove(client);
-        } else {
-            throw new NoLocation();
-        }
+        //if (generalSubscription.containsKey(location)) {
+            //generalSubscription.get(location).remove(client);
+        //}
         if (generalSubscription.get(location).size() == 0) {
             removeLocation(location);
         }
@@ -45,16 +43,16 @@ public class ClientManager {
 
     public void removeLocation(Location location) throws NoLocation {
         if (generalSubscription.containsKey(location)) {
-            Set<Client> temporaryList = generalSubscription.get(location).stream().collect(Collectors.toSet());
+            //Set<Client> temporaryList = generalSubscription.get(location).stream().collect(Collectors.toSet());
             generalSubscription.remove(location);
-            Location temporaryLocation = null;
-            if (generalSubscription.containsKey(temporaryLocation)) {
-                for (Client client : temporaryList) {
-                    generalSubscription.get(temporaryLocation).add(client);
-                }
-            } else {
-                generalSubscription.put(temporaryLocation, temporaryList);
-            }
+            //Location temporaryLocation = null;
+            //if (generalSubscription.containsKey(temporaryLocation)) {
+                //for (Client client : temporaryList) {
+                    //generalSubscription.get(temporaryLocation).add(client);
+                //}
+            //} else {
+                //generalSubscription.put(temporaryLocation, temporaryList);
+            //}
         } else {
             throw new NoLocation();
         }
